@@ -3,6 +3,10 @@ body{
 	font-family: sans-serif;
 	color: #333;
 }
+main {
+    
+}
+
 .question{
 	font-weight: 600;
 }
@@ -26,6 +30,7 @@ body{
 
 input {
     display: block;
+    margin: 2em;
 }
 #radio {
     display: inline-block;

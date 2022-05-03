@@ -146,7 +146,7 @@ var myQuestions = [
         if(userAnswer===questions[i].correctAnswer){
           // add to the number of correct answers
           numCorrect++;
-          alert('True');
+        
           // color the answers green
           answerContainers[i].style.color = 'lightgreen';
         }
@@ -154,7 +154,7 @@ var myQuestions = [
         else{
           // color the answers red
           answerContainers[i].style.color = 'red';
-          alert('False');
+        
         }
       }
   
