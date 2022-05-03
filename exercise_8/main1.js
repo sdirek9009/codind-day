@@ -117,7 +117,7 @@ var myQuestions = [
     shuffleArray(quizContainer)
 
 
-    //randomize the element of array
+    //randomize the questions of the array
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
             var j = Math.floor(Math.random() * (i + 1));
@@ -143,12 +143,12 @@ var myQuestions = [
         userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
         
         // if answer is correct
-        if(userAnswer===questions[i].correctAnswer){
+        if(userAnswer === questions[i].correctAnswer){
           // add to the number of correct answers
           numCorrect++;
         
           // color the answers green
-          answerContainers[i].style.color = 'lightgreen';
+          answerContainers[i].style.color = 'blue';
         }
         // if answer is wrong or blank
         else{
@@ -158,14 +158,14 @@ var myQuestions = [
         }
       }
   
-      // show number of correct answers out of total
+      // show the number of correct answers out of total
       resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
     }
   
-    // show questions right away
+    // show questions
     showQuestions(questions, quizContainer);
     
-    // on submit, show results
+    //show results
     submitButton.onclick = function(){
       showResults(questions, quizContainer, resultsContainer);
     }
