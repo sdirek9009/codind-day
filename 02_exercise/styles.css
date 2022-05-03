@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  * {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    list-style: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+      
+  }
